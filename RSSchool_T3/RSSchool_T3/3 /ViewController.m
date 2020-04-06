@@ -27,7 +27,7 @@
 
     UIColor *color = [UIColor blackColor];
 
-    int viewWidth = self.view.bounds.size.width;
+    double viewWidth = self.view.bounds.size.width;
 
     self.view.accessibilityIdentifier = @"mainView";
 
@@ -80,7 +80,7 @@
 
     self.buttonProcess = [[UIButton alloc] initWithFrame:CGRectMake(viewWidth / 2 - 35, 300, 70, 30)];
     [self.buttonProcess setTitle:@"Process" forState:UIControlStateNormal];
-    [self.buttonProcess setTitleColor:UIColor.systemBlueColor forState:UIControlStateNormal];
+    [self.buttonProcess setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [self.buttonProcess addTarget:self action:@selector(process) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.buttonProcess];
     self.buttonProcess.accessibilityIdentifier = @"buttonProcess";

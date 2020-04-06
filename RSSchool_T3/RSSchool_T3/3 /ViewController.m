@@ -31,46 +31,46 @@
 
     self.view.accessibilityIdentifier = @"mainView";
 
-    self.labelResultColor = [[UILabel alloc] initWithFrame:CGRectMake(30, 100, 100, 50)];
+    self.labelResultColor = [[UILabel alloc] initWithFrame:CGRectMake(30, 100, 100, 30)];
     self.labelResultColor.text = @"Color";
     [self.view addSubview:_labelResultColor];
     self.labelResultColor.accessibilityIdentifier = @"labelResultColor";
 
-    self.viewResultColor = [[UIView alloc] initWithFrame:CGRectMake(150, 100, 200, 50)];
+    self.viewResultColor = [[UIView alloc] initWithFrame:CGRectMake(150, 100, 200, 30)];
     self.viewResultColor.backgroundColor = color;
     [self.view addSubview:self.viewResultColor];
     self.viewResultColor.accessibilityIdentifier = @"viewResultColor";
 
-    self.labelRed = [[UILabel alloc] initWithFrame:CGRectMake(30, 200, 70, 50)];
+    self.labelRed = [[UILabel alloc] initWithFrame:CGRectMake(30, 150, 70, 30)];
     self.labelRed.text = @"RED";
     [self.view addSubview:self.labelRed];
     self.labelRed.accessibilityIdentifier = @"labelRed";
 
-    self.textFieldRed = [[UITextField alloc] initWithFrame:CGRectMake(100, 200, 250, 50)];
+    self.textFieldRed = [[UITextField alloc] initWithFrame:CGRectMake(100, 150, 250, 30)];
     self.textFieldRed.placeholder = @"0..255";
     self.textFieldRed.borderStyle = UITextBorderStyleRoundedRect;
     [self.textFieldRed addTarget:self action:@selector(tapTextField) forControlEvents:UIControlEventAllTouchEvents];
     [self.view addSubview:self.textFieldRed];
     self.textFieldRed.accessibilityIdentifier = @"textFieldRed";
 
-    self.labelGreen = [[UILabel alloc] initWithFrame:CGRectMake(30, 300, 70, 50)];
+    self.labelGreen = [[UILabel alloc] initWithFrame:CGRectMake(30, 200, 70, 30)];
     self.labelGreen.text = @"GREEN";
     [self.view addSubview:self.labelGreen];
     self.labelGreen.accessibilityIdentifier = @"labelGreen";
 
-    self.textFieldGreen = [[UITextField alloc] initWithFrame:CGRectMake(100, 300, 250, 50)];
+    self.textFieldGreen = [[UITextField alloc] initWithFrame:CGRectMake(100, 200, 250, 30)];
     self.textFieldGreen.placeholder = @"0..255";
     self.textFieldGreen.borderStyle = UITextBorderStyleRoundedRect;
     [self.textFieldGreen addTarget:self action:@selector(tapTextField) forControlEvents:UIControlEventAllTouchEvents];
     [self.view addSubview:self.textFieldGreen];
     self.textFieldGreen.accessibilityIdentifier = @"textFieldGreen";
 
-    self.labelBlue = [[UILabel alloc] initWithFrame:CGRectMake(30, 400, 70, 50)];
+    self.labelBlue = [[UILabel alloc] initWithFrame:CGRectMake(30, 250, 70, 30)];
     self.labelBlue.text = @"BLUE";
     [self.view addSubview:self.labelBlue];
     self.labelBlue.accessibilityIdentifier = @"labelBlue";
 
-    self.textFieldBlue = [[UITextField alloc] initWithFrame:CGRectMake(100, 400, 250, 50)];
+    self.textFieldBlue = [[UITextField alloc] initWithFrame:CGRectMake(100, 250, 250, 30)];
     self.textFieldBlue.placeholder = @"0..255";
     self.textFieldBlue.borderStyle = UITextBorderStyleRoundedRect;
     [self.textFieldBlue addTarget:self action:@selector(tapTextField) forControlEvents:UIControlEventAllTouchEvents];
@@ -78,7 +78,7 @@
     self.textFieldBlue.accessibilityIdentifier = @"textFieldBlue";
 
 
-    self.buttonProcess = [[UIButton alloc] initWithFrame:CGRectMake(viewWidth / 2 - 35, 450, 70, 50)];
+    self.buttonProcess = [[UIButton alloc] initWithFrame:CGRectMake(viewWidth / 2 - 35, 300, 70, 30)];
     [self.buttonProcess setTitle:@"Process" forState:UIControlStateNormal];
     [self.buttonProcess setTitleColor:UIColor.systemBlueColor forState:UIControlStateNormal];
     [self.buttonProcess addTarget:self action:@selector(process) forControlEvents:UIControlEventTouchUpInside];
